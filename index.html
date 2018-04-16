@@ -15,10 +15,14 @@
     <div id="app" style="margin-top: 50px;">
         <div class="ui container">
             <div class="ui fluid input">
+                <!-- API Keyの入力テキスト -->
                 <input type="password" v-model="apikey" placeholder="API Key">
+
+                <!-- SendGrid Web APIを呼び出すボタン -->
                 <button class="ui button" v-on:click="call_bounces_api()">Call Bounces API</button>
             </div>
             
+            <!-- Web APIの呼び出し結果を表示するテーブル -->
             <table class="ui celled striped table">
                 <thead>
                     <tr>
